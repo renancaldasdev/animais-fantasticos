@@ -3,13 +3,13 @@ import Accordion from "./modules/accordion-animacao.js";
 import TabNav from "./modules/tabMenu-animacao.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
-
 import ScrollAnima from "./modules/scroll-anima.js";
 import DropdownMenu from "./modules/dropdown-menu.js";
 import MenuMobile from "./modules/menu-mobile.js";
 import Funcionamento from "./modules/funcionamento.js";
 import FetchBitcoin from "./modules/fetchBitcoin.js";
 import fetchAnimais from "./modules/fetchAnimais.js";
+import Slide from "./modules/slide.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -46,5 +46,8 @@ menuMobile.init();
 
 const funcionamento = new Funcionamento("[data-semana]", "aberto");
 funcionamento.init();
+
+const slide = new Slide(".slide", ".slide-wrapper");
+slide.init();
 
 FetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
