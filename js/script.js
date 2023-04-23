@@ -49,5 +49,6 @@ funcionamento.init();
 
 const slide = new Slide(".slide", ".slide-wrapper");
 slide.init();
+slide.changeSlide(0);
 
 FetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
