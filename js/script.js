@@ -51,6 +51,6 @@ const slide = new SlideNav(".slide", ".slide-wrapper");
 slide.init();
 slide.addArrow(".prev", ".next");
 
-slide.addControl();
+slide.addControl(".custom-control");
 
 FetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
