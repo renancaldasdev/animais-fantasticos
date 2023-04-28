@@ -1,5 +1,10 @@
+.galeria {
+  grid-column: 1/-1;
+}
+
 .slide-wrapper {
   overflow: hidden;
+  grid-column: 1/-1;
 }
 
 .slide {
@@ -51,9 +56,9 @@
 }
 
 .custom-control {
+  grid-column: 1/-1;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
   margin-bottom: 20px;
   flex-wrap: wrap;
 }
@@ -78,6 +83,7 @@
 }
 
 .arrow-nav {
+  grid-column: 1/-1;
   display: flex;
   justify-content: space-around;
   margin: 20px 0;
